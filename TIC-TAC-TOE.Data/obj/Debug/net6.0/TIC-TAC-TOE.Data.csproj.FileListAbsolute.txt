@@ -1,0 +1,14 @@
+C:\launchpadrepository\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.deps.json
+C:\launchpadrepository\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.runtimeconfig.json
+C:\launchpadrepository\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.dll
+C:\launchpadrepository\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.pdb
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.csproj.AssemblyReference.cache
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.AssemblyInfoInputs.cache
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.AssemblyInfo.cs
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.csproj.CoreCompileInputs.cache
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.dll
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\refint\TIC-TAC-TOE.Data.dll
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.pdb
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.genruntimeconfig.cache
+C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\ref\TIC-TAC-TOE.Data.dll

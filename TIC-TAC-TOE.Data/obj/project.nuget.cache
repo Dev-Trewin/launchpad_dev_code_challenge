@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qQ6+nGgIH3mOc8q3oKBZcn7em9nhWzoaVKzmYxQF8DU70fqISmzTEhhqW5yjrePB33NXdeGPncBfUEUQeQMCAg==",
+  "dgSpecHash": "MpQi7TObO9hvgZF6U1eg+09vCQCnQQURkcVONQy2m/gb7UUbFlMmpYxilNjbO8YHAlKz3xhxqMlp56c2GH/a5Q==",
   "success": true,
-  "projectFilePath": "C:\\launchpadrepository\\TIC-TAC-TOE.Data\\TIC-TAC-TOE.Data.csproj",
+  "projectFilePath": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\TIC-TAC-TOE.Data\\TIC-TAC-TOE.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trewi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\trewi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",

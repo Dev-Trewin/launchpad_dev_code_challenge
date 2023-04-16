@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tic_tac_toe.Service
-build_property.ProjectDir = C:\launchpadrepository\Tic-tac-toe.Service\
+build_property.ProjectDir = C:\launchpad_repo\launchpad_dev_code_challenge\Tic-tac-toe.Service\

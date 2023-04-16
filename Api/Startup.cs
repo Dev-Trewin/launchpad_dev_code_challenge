@@ -3,9 +3,7 @@ using Tic_tac_toe.Service;
 using Tic_tac_toe.Service.Implementation;
 using tic_tac_toe_api.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
 namespace Api
 {
     public class Startup
@@ -28,7 +26,8 @@ namespace Api
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-            services.AddScoped<IGameService, GameService>();
+            services.AddEndpointsApiExplorer();
+             services.AddScoped<IGameService, GameService>();
             services.AddScoped<IMoveService, MoveService>();
             services.AddScoped<PlayerService, PlayerService>();
           
@@ -49,6 +48,7 @@ namespace Api
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+      
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

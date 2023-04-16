@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bnjkbrlpO+feYDAfNPoA9l7ReCmSupxCsA4zEtpyRVmzcU0TvaeBCsJKxO1iTcElLlNlWWPQPHeorxmBdozBrQ==",
+  "dgSpecHash": "miqNGNVoa2WTiz6NEyxKcTfymH3QnM8aljFCDu5cFJFwKvPH/x4rOeHIyxYUs6T1DVVW8QXgRV9pfq/c0Ypduw==",
   "success": true,
-  "projectFilePath": "C:\\launchpadrepository\\Api\\Api.csproj",
+  "projectFilePath": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trewi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\trewi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

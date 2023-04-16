@@ -12,7 +12,7 @@ using tic_tac_toe_api.Data.Entities;
 namespace TIC_TAC_TOE.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230416005337_createdb")]
+    [Migration("20230416160614_createdb")]
     partial class createdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -228,17 +228,15 @@ namespace TIC_TAC_TOE.Data.Migrations
 
             modelBuilder.Entity("tic_tac_toe_api.Data.Entities.Game", b =>
                 {
-                    b.Property<int>("GameId")
+                    b.Property<Guid>("GameId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GameId"), 1L, 1);
+                    b.Property<Guid>("PlayerOneId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("PlayerOneId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlayerTwoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("PlayerTwoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("GameId");
 
@@ -247,17 +245,15 @@ namespace TIC_TAC_TOE.Data.Migrations
 
             modelBuilder.Entity("tic_tac_toe_api.Data.Entities.Move", b =>
                 {
-                    b.Property<int>("MoveId")
+                    b.Property<Guid>("MoveId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MoveId"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Column")
                         .HasColumnType("int");
 
-                    b.Property<int>("GameId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("GameId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("PlayerId")
                         .HasColumnType("int");

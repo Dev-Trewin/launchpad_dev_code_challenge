@@ -10764,11 +10764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\launchpadrepository\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\launchpadrepository\\Api\\Api.csproj",
+      "projectPath": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\trewi\\.nuget\\packages\\",
-      "outputPath": "C:\\launchpadrepository\\Api\\obj\\",
+      "outputPath": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10791,8 +10791,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\launchpadrepository\\Tic-tac-toe.Service\\TIC-TAC-TOE.Service.csproj": {
-              "projectPath": "C:\\launchpadrepository\\Tic-tac-toe.Service\\TIC-TAC-TOE.Service.csproj"
+            "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Tic-tac-toe.Service\\TIC-TAC-TOE.Service.csproj": {
+              "projectPath": "C:\\launchpad_repo\\launchpad_dev_code_challenge\\Tic-tac-toe.Service\\TIC-TAC-TOE.Service.csproj"
             }
           }
         }

@@ -52,10 +52,9 @@ namespace TIC_TAC_TOE.Data.Migrations
                 name: "Games",
                 columns: table => new
                 {
-                    GameId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    PlayerOneId = table.Column<int>(type: "int", nullable: false),
-                    PlayerTwoId = table.Column<int>(type: "int", nullable: false)
+                    GameId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    PlayerOneId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    PlayerTwoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,9 +65,8 @@ namespace TIC_TAC_TOE.Data.Migrations
                 name: "Moves",
                 columns: table => new
                 {
-                    MoveId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GameId = table.Column<int>(type: "int", nullable: false),
+                    MoveId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    GameId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PlayerId = table.Column<int>(type: "int", nullable: false),
                     Row = table.Column<int>(type: "int", nullable: false),
                     Column = table.Column<int>(type: "int", nullable: false)

@@ -1,30 +1,40 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Tic_tac_toe.Service;
 using tic_tac_toe_api.Data.Entities;
 
-namespace tic_tac_toe_api.Controllers
+namespace Api.Controllers
 {
-    public class GameController:Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;
 
         public GameController(IGameService gameService)
         {
             _gameService = gameService;
-           
+
         }
         [HttpPost]
-        public async Task<IActionResult> StartGame(int playerOneId, int playerTwoId)
+        public async Task<JsonResult> StartGame()
         {
+            Guid test = new Guid();
             var Newgame = new Game
             {
-                PlayerOneId = playerOneId,
-                PlayerTwoId = playerTwoId
+                GameId = Guid.NewGuid(),
+                PlayerOneId = Guid.NewGuid(),
+                PlayerTwoId = Guid.NewGuid(),
             };
 
             await _gameService.CreateAsync(Newgame);
 
-            return Ok(Newgame);
+            return new JsonResult(Ok(Newgame));
+        }
+        [HttpGet]
+        public JsonResult Index()
+        {
+            return new JsonResult(Ok());
         }
     }
 }

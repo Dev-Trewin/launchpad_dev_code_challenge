@@ -9,6 +9,6 @@ namespace Tic_tac_toe.Service
 {
     public interface IGameService
     {
-        Task CreateAsync(Game newEmployee);
+        Task CreateAsync(Game newGame);
     }
 }

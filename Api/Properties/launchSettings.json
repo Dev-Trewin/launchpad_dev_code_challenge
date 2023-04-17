@@ -3,7 +3,7 @@
     "Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/game/",
+      "launchUrl": "api/game/welcome",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
@@ -21,7 +21,7 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/game",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/game/welcome",
       "publishAllPorts": true,
       "useSSL": true
     }

@@ -274,6 +274,9 @@ namespace TIC_TAC_TOE.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("PlayerId");
 
                     b.ToTable("Players");

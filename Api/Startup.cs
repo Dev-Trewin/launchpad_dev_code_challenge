@@ -30,7 +30,7 @@ namespace Api
             services.AddEndpointsApiExplorer();
              services.AddScoped<IGameService, GameService>();
             services.AddScoped<IMoveService, MoveService>();
-            services.AddScoped<PlayerService, PlayerService>();
+            services.AddScoped<IPlayerService, PlayerService>();
           
 
         }

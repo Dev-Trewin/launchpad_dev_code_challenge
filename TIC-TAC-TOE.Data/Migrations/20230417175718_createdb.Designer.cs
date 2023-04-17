@@ -12,7 +12,7 @@ using tic_tac_toe_api.Data.Entities;
 namespace TIC_TAC_TOE.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230417152450_createdb")]
+    [Migration("20230417175718_createdb")]
     partial class createdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -275,6 +275,9 @@ namespace TIC_TAC_TOE.Data.Migrations
                     b.Property<Guid>("PlayerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PlayerId");
 

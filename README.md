@@ -1,5 +1,24 @@
 # launchpad_dev_code_challenge
-# launchpad_dev_code_challenge
+
+How to get your system running:
+
+1-This project was created using .net 6 and entity framework.
+2-Neet to install Microsoft SqlServer. 
+1-In Visual Studio select Api project as a start up project
+2-run add-migration command
+3-run update-database
+
+Note:This app have three endpoint
+    https://localhost:7222/api/game/start
+    The start endpoint does not receive the andy parameter
+    https://localhost:7222/api/game/getGames
+     The Getgames endpoint does not receive any parameter
+    https://localhost:7222/api/move/createmove
+    CreateMove endpoint receives playerId,gameId, row, col and name.
+
+
+
+Note: I deed not add a enpoint to register a player I assume that endpoint is other ticket
 
 Question: What is the appropriate OAuth 2/OIDC grant to use for a web application using a SPA (Single Page Application) and why.
 

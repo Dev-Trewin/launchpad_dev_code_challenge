@@ -17,9 +17,10 @@ namespace Api.Controllers
 
         }
         [HttpPost]
+        [HttpPost("start")]
         public async Task<JsonResult> StartGame()
         {
-            Guid test = new Guid();
+        
             var Newgame = new Game
             {
                 GameId = Guid.NewGuid(),
@@ -31,7 +32,7 @@ namespace Api.Controllers
 
             return new JsonResult(Ok(Newgame));
         }
-        [HttpGet]
+        [HttpGet("welcome")]
         public JsonResult Index()
         {
             return new JsonResult(Ok());

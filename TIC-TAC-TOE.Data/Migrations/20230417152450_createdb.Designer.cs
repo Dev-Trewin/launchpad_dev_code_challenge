@@ -12,7 +12,7 @@ using tic_tac_toe_api.Data.Entities;
 namespace TIC_TAC_TOE.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230416160614_createdb")]
+    [Migration("20230417152450_createdb")]
     partial class createdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -255,28 +255,26 @@ namespace TIC_TAC_TOE.Data.Migrations
                     b.Property<Guid>("GameId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("PlayerId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("PlayerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Row")
                         .HasColumnType("int");
 
                     b.HasKey("MoveId");
 
+                    b.HasIndex("GameId");
+
+                    b.HasIndex("PlayerId");
+
                     b.ToTable("Moves");
                 });
 
             modelBuilder.Entity("tic_tac_toe_api.Data.Entities.Player", b =>
                 {
-                    b.Property<int>("PlayerId")
+                    b.Property<Guid>("PlayerId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlayerId"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("PlayerId");
 
@@ -332,6 +330,30 @@ namespace TIC_TAC_TOE.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("tic_tac_toe_api.Data.Entities.Move", b =>
+                {
+                    b.HasOne("tic_tac_toe_api.Data.Entities.Game", "Game")
+                        .WithMany("Moves")
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("tic_tac_toe_api.Data.Entities.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+
+                    b.Navigation("Player");
+                });
+
+            modelBuilder.Entity("tic_tac_toe_api.Data.Entities.Game", b =>
+                {
+                    b.Navigation("Moves");
                 });
 #pragma warning restore 612, 618
         }

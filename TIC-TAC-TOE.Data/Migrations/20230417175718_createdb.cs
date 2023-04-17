@@ -65,7 +65,8 @@ namespace TIC_TAC_TOE.Data.Migrations
                 name: "Players",
                 columns: table => new
                 {
-                    PlayerId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    PlayerId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

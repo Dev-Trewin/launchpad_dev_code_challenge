@@ -16,7 +16,7 @@ namespace Api.Controllers
             _gameService = gameService;
 
         }
-        [HttpPost]
+        
         [HttpPost("start")]
         public async Task<JsonResult> StartGame()
         {
@@ -26,11 +26,21 @@ namespace Api.Controllers
                 GameId = Guid.NewGuid(),
                 PlayerOneId = Guid.NewGuid(),
                 PlayerTwoId = Guid.NewGuid(),
+          
             };
 
             await _gameService.CreateAsync(Newgame);
 
             return new JsonResult(Ok(Newgame));
+        }
+
+        [HttpGet("getGames")]
+        public async Task<JsonResult> GetGames()
+        {
+         
+           var games= await _gameService.Retrivegame();
+
+            return new JsonResult(Ok(games));
         }
         [HttpGet("welcome")]
         public JsonResult Index()

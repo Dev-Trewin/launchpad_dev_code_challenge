@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Tic_tac_toe.Service
 {
     public interface IGameService
     {
-        Task CreateAsync(Game newEmployee);
+        Task CreateAsync(Game newGame);
+        Task<JsonResult> Retrivegame();
     }
 }

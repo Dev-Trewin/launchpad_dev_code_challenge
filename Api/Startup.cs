@@ -26,10 +26,11 @@ namespace Api
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+            services.AddControllers();
             services.AddEndpointsApiExplorer();
              services.AddScoped<IGameService, GameService>();
             services.AddScoped<IMoveService, MoveService>();
-            services.AddScoped<PlayerService, PlayerService>();
+            services.AddScoped<IPlayerService, PlayerService>();
           
 
         }

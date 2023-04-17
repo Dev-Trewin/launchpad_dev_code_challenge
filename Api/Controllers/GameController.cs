@@ -16,22 +16,33 @@ namespace Api.Controllers
             _gameService = gameService;
 
         }
-        [HttpPost]
+        
+        [HttpPost("start")]
         public async Task<JsonResult> StartGame()
         {
-            Guid test = new Guid();
+        
             var Newgame = new Game
             {
                 GameId = Guid.NewGuid(),
                 PlayerOneId = Guid.NewGuid(),
                 PlayerTwoId = Guid.NewGuid(),
+          
             };
 
             await _gameService.CreateAsync(Newgame);
 
             return new JsonResult(Ok(Newgame));
         }
-        [HttpGet]
+
+        [HttpGet("getGames")]
+        public async Task<JsonResult> GetGames()
+        {
+         
+           var games= await _gameService.Retrivegame();
+
+            return new JsonResult(Ok(games));
+        }
+        [HttpGet("welcome")]
         public JsonResult Index()
         {
             return new JsonResult(Ok());

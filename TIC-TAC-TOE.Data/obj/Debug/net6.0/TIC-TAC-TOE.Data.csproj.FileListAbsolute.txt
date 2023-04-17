@@ -12,8 +12,8 @@ C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\refint\TIC-TAC-TOE.Data
 C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.pdb
 C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.genruntimeconfig.cache
 C:\launchpadrepository\TIC-TAC-TOE.Data\obj\Debug\net6.0\ref\TIC-TAC-TOE.Data.dll
-C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.deps.json
-C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.runtimeconfig.json
+C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.DATA\bin\Debug\net6.0\TIC-TAC-TOE.Data.deps.json
+C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.DATA\bin\Debug\net6.0\TIC-TAC-TOE.Data.runtimeconfig.json
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.dll
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\bin\Debug\net6.0\TIC-TAC-TOE.Data.pdb
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.csproj.AssemblyReference.cache
@@ -24,5 +24,5 @@ C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.dll
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\refint\TIC-TAC-TOE.Data.dll
 C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.pdb
-C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\TIC-TAC-TOE.Data.genruntimeconfig.cache
-C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.Data\obj\Debug\net6.0\ref\TIC-TAC-TOE.Data.dll
+C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.DATA\obj\Debug\net6.0\TIC-TAC-TOE.Data.genruntimeconfig.cache
+C:\launchpad_repo\launchpad_dev_code_challenge\TIC-TAC-TOE.DATA\obj\Debug\net6.0\ref\TIC-TAC-TOE.Data.dll

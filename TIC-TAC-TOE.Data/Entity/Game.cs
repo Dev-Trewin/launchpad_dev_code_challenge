@@ -7,7 +7,7 @@ namespace tic_tac_toe_api.Data.Entities
         public Guid GameId { get; set; }
         public Guid PlayerOneId { get; set; }
         public Guid PlayerTwoId { get; set; }
-
+        public virtual ICollection<Move> Moves { get; set; }
    
     }
 }

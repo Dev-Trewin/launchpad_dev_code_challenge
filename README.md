@@ -4,9 +4,9 @@ How to get your system running:
 
 1-This project was created using .net 6 and entity framework.
 2-Neet to install Microsoft SqlServer. 
-1-In Visual Studio select Api project as a start up project
-2-run add-migration command
-3-run update-database
+1-In Visual Studio select Api project as a start up project.
+2-run add-migration command.
+3-run update-database.
 
 Note:This app have three endpoint
     https://localhost:7222/api/game/start
